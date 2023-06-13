@@ -1,0 +1,209 @@
+#carcasa{
+    margin-left: 700px;    
+    width: 30vw;
+    height: 76vh;
+    border: 1px solid black;
+    border-radius: 40px;
+}
+
+#partesuperior{
+    height: 35vh;
+    width: 576px;
+    display: grid;
+    
+    margin-left: -535px;
+    grid-template-columns: 50px 450px 50px;
+    grid-template-rows: 30px 300px;
+    background-color: white;
+    border-radius: 40px 40px 5px 5px;
+}
+
+.backleft{
+    height: 335px;
+    width: 42px;
+    border-radius: 40px 0px 0px 0px;
+    background-color: rgb(77, 78, 78);
+}
+
+.backright{
+    height: 335px;
+    width: 42px;
+    margin-left: 535px;
+    border-radius: 0px 40px 0px 0px;
+    background-color: rgb(77, 78, 78);
+}
+
+.centrosup{
+    margin-left: 20px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    border: 1px solid black;
+    border-radius: 15px 15px 5px 5px;
+    box-shadow: inset 1px 0px 5px black;
+}
+
+.centro{
+    width: 405px;
+    height: 275px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.ladosupizq{
+    margin-left: 20px;
+    justify-self: center;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: 30px 240px 30px;
+}
+
+.ladosupder{
+    margin-left: 20px;
+    justify-self: center;
+    grid-row: 2 / 3;
+    grid-template-rows: 30px 240px 30px;
+    display: grid;
+}
+
+.ladosup{
+    grid-column: 1 / 4;
+    align-items: center;
+    place-self: center;
+    display: flex;
+}
+
+.circulo{
+    width: 8px;
+    height: 8px;
+    margin: 140px;
+    border: 1px solid rgb(243, 217, 168);
+    background-color: rgba(253, 255, 158, 0.89);
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px 1px black;
+}
+
+.camara{
+    width: 13px;
+    height: 13px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+/* Posición de los altavoces y de los cuadrados*/
+.altavoz{
+    align-content: center;
+    display: grid;
+    grid-template-columns: 5px 5px 5px 5px 5px 5px 5px;
+    grid-template-rows: 5px 5px 5px 5px 5px 5px 5px;
+}
+.altavoz1{
+    width: 3px;
+    height: 3px;
+    grid-column: 4 / 8;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.altavoz2{
+    width: 3px;
+    height: 3px;
+    grid-column: 2 / 8;
+    grid-row: 2 / 8;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.altavoz3{
+    width: 3px;
+    height: 3px;
+    grid-column: 6 / 8;
+    grid-row: 2 / 8;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.altavoz4{
+    width: 3px;
+    height: 3px;
+    grid-row: 4 / 8;
+    grid-column: 1 / 8;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.altavoz5{
+    width: 3px;
+    height: 3px;
+    grid-row: 6 / 8;
+    grid-column: 6 / 8;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.altavoz6{
+    width: 3px;
+    height: 3px;
+    grid-row: 6 / 8;
+    grid-column: 2 / 8;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.altavoz7{
+    width: 3px;
+    height: 3px;
+    grid-row: 4 / 8;
+    grid-column: 4 / 8;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.altavoz8{
+    width: 3px;
+    height: 3px;
+    grid-row: 7 / 8;
+    grid-column: 4 / 8;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.altavoz9{
+    width: 3px;
+    height: 3px;
+    grid-row: 4 / 8;
+    grid-column: 7 / 8;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.cuadrado{
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: inset 1px 1px 2px 0px black;
+}
+/* -------------------------------------- */
+
+#partecentral{
+    height: 3vh;
+    display: flex;
+}
+
+.lateralizq{
+    width: 40px;
+    height: 25px;
+    border: 1px solid black;
+}
+.barracentral{
+    width: 500px;
+    height: 30px;
+    margin-top: -5px;
+    border: 1px solid black;
+}
+.lateralder{
+    width: 40px;
+    height: 25px;
+    border: 1px solid black;
+}
+
+
+
+#parteinferior{
+    height: 36vh;
+}
