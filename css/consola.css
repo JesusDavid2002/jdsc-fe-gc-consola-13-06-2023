@@ -19,7 +19,6 @@ body{
     display: flex;
     transform-origin: bottom;
     transform: skewX(-2deg);
-    box-shadow: -10px -10px 20px 0px black;
 }
 
 #partesuperiorcentral{
@@ -29,7 +28,8 @@ body{
     margin-left: -42px;
     grid-template-columns: 50px 450px 50px;
     grid-template-rows: 30px 300px;
-    background-color: rgb(236, 236, 236);
+    box-shadow: -10px -10px 20px 0px black;
+    background: linear-gradient(rgb(179, 178, 178) 0%,rgb(218, 218, 218) 20%, rgb(129, 129, 129) 70%, rgb(177, 177, 177) 80%);
     border-radius: 40px 40px 5px 5px;
     border: 1px solid black;
     z-index: 2;
@@ -44,7 +44,7 @@ body{
 }
 
 #partesuperiorder{
-    margin-left: -16px;
+    margin-left: -15px;
     border-radius: 0px 40px 0px 0px;
 }
 
@@ -172,8 +172,8 @@ body{
 }
 
 .cuadrado{
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     margin: 10px;
     border: 1px solid black;
     border-radius: 3px;
@@ -224,6 +224,7 @@ body{
 
 .tresDtextobot, .tresDtextotop{
     z-index: 7;
+    color: rgb(46, 46, 46)
 }
 
 .tresDtextotop{
@@ -239,18 +240,18 @@ body{
 /* Parte central de la consola */
 #partecentral{
     height: 40px;
-    width: 590px;
+    width: 579px;
     display: flex;
     margin-top: 5px;
-    margin-left: -6px;
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 5px 5px 5px 5px;
     box-shadow: -10px -20px 20px 0px black;
 }
 
 .lateralizq, .lateralder{
-    width: 46px;
+    width: 40px;
     height: 25px;
     border: 1px solid black;
+    border-bottom: 1px solid transparent;
     background: linear-gradient(rgb(236, 236, 236) 0%, white 50%, rgb(231, 230, 230) 100%);
 }
 
@@ -295,12 +296,13 @@ body{
     margin-top: -13px;
     grid-template-columns: 100px 370px 105px;
     grid-template-rows: 30px 270px 30px ;
-    background-color: rgb(236, 236, 236);
     border: 1px solid black;
+    border-top: 1px solid transparent;
     border-radius: 5px 5px 40px 40px;
     transform-origin: top;
     transform: skewX(2deg);
     box-shadow: -10px 10px 20px 0px black;
+    background: linear-gradient(rgb(223, 223, 223) 0%,rgb(218, 218, 218) 20%, rgb(167, 167, 167) 70%, rgb(180, 180, 180) 80%);
 }
 
 /* Centro de la parte inferior de la consola */
@@ -311,7 +313,7 @@ body{
 .centro2{
     width: 350px;
     height: 285px;
-    border: 10px solid white;
+    border: 10px solid rgb(204, 204, 204);
     border-radius: 5px;
     box-shadow: 2px 0px 2px 2px black;
     background: url(../img/inferiornintendo.png) no-repeat ;
@@ -325,19 +327,20 @@ body{
     margin-top: -5px;
     display: grid;
     grid-template-columns: 110px 110px 110px 20px;
-    border-top: 10px solid white;
-    border-left: 20px solid white;
-    border-right: 10px solid white;
+    border-top: 10px solid rgb(207, 207, 207);
+    border-left: 20px solid rgb(138, 138, 138);
+    border-right: 10px solid rgb(175, 175, 175);
     border-radius: 0px 0px 10px 10px;
-    box-shadow: 2px 2px 2px 2px black;
-    background-color: white;
+    box-shadow: 2px 2px 2px 2px black;    
+    background: linear-gradient(rgb(223, 223, 223) 0%,rgb(218, 218, 218) 20%, rgb(167, 167, 167) 70%, rgb(180, 180, 180) 80%);
+
 }
 
 .botoninf{
     padding: 5px;
     text-align: center;
     font-family: sans-serif;
-    color: grey;
+    color: rgb(46, 46, 46);
     font-size: small;
     border: 1px solid black;
     border-radius: 5px 5px 2px 2px;
@@ -391,7 +394,7 @@ img{
     width: 70px;
     height: 70px;
     box-shadow: 0px 0px 10px 2px black;
-    background-color: rgb(247, 249, 252);
+    background-color: rgb(224, 224, 224);
 }
 
 .joystickint{
@@ -413,6 +416,9 @@ img{
 .cruz1, .cruz2, .cruz3, .cruz4, .cruz5{
     width: 20px;
     height: 20px;
+    background-color:rgb(180, 180, 180);
+    font-family: sans-serif;
+    text-align: center;
 }
 
 .cruz1{ 
@@ -421,14 +427,15 @@ img{
     border-right: 1px solid black;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
+    box-shadow: 0px -2px 1px black;
 }
-
 .cruz2{
     border-bottom: 1px solid black;
     border-left: 1px solid black;
     border-top: 1px solid black;
     grid-row: 2 / 3;
     grid-column: 1 / 2;
+    box-shadow: -2px 0px 1px black;
 }
 
 .cruz3{
@@ -437,6 +444,7 @@ img{
     border-right: 1px solid black;
     grid-row: 2 / 3;
     grid-column: 3 / 4;
+    box-shadow: 2px 0px 1px black;
 }
 
 .cruz4{
@@ -445,11 +453,39 @@ img{
     border-right: 1px solid black;
     grid-row: 3 / 4;
     grid-column: 2 / 3;
+    box-shadow: 0px 2px 1px black;
 }
 
 .cruz5{
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+}
+
+.cruz1-2{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2; 
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.cruz1-3{
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.cruz3-4{
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+    border-left: 3px solid black;
+    border-top: 3px solid black;
+}
+.cruz2-4{
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    border-right: 3px solid black;
+    border-top: 3px solid black;
 }
 
 /* Parte derecha de controles */
@@ -476,7 +512,7 @@ img{
     text-align: center;
     font-size: smaller; 
     font-family: sans-serif;
-    color: grey;    
+    color: rgb(46, 46, 46);
     background: linear-gradient(rgb(212, 212, 212) 0%, white 50%, rgb(204, 204, 204) 100%);
     box-shadow: 1px 1px 2px 0px black;
 }
@@ -505,7 +541,6 @@ img{
     border: 1px solid grey;
     border-radius: 50%;
     margin-left: 25px;
-    padding-top: 3px;
     box-shadow: inset 0px 1px 3px 0px black;
 }
 
@@ -515,7 +550,7 @@ p{
     margin-top: 5px;
     font-size: x-small;
     font-family: sans-serif;
-    color: grey;
+    color: rgb(46, 46, 46)
 }
 
 .onoff, .cargador{
