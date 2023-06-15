@@ -1,15 +1,25 @@
+body{
+    display: grid;
+    grid-template-columns: 700px 600px 300px;
+    grid-template-rows: 50px 800px;
+}
+
 #carcasa{
-    margin-left: 700px;
     width: 576px;
     height: 691px;
-    border: 1px solid black;
     border-radius: 40px;
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
 
 #partesuperior{
     height: 329.34px;
-    width: 1000px;
+    width: 577px;
+    border-radius: 40px 40px 5px 5px;
     display: flex;
+    transform-origin: bottom;
+    transform: skewX(-2deg);
+    box-shadow: -10px -10px 20px 0px black;
 }
 
 #partesuperiorcentral{
@@ -21,6 +31,7 @@
     grid-template-rows: 30px 300px;
     background-color: rgb(236, 236, 236);
     border-radius: 40px 40px 5px 5px;
+    border: 1px solid black;
     z-index: 2;
 }
 
@@ -28,12 +39,12 @@
     height: 335px;
     width: 42px;
     border-radius: 40px 0px 0px 0px;
-    background-color: rgb(77, 78, 78);
-    z-index: 1;
+    background-color: black;
+    z-index: 0;
 }
 
 #partesuperiorder{
-    margin-left: -42px;
+    margin-left: -16px;
     border-radius: 0px 40px 0px 0px;
 }
 
@@ -44,6 +55,7 @@
     border: 1px solid black;
     border-radius: 15px 15px 5px 5px;
     box-shadow: inset 1px 0px 5px black;
+    
 }
 
 .centro{
@@ -53,7 +65,8 @@
     margin-top: 10px;
     border: 1px solid black;
     border-radius: 5px;
-    background-color: black;
+    background: url(../img/images.jpg) no-repeat ;
+    background-size: 100% 100%;
 }
 
 .ladosupizq{
@@ -84,7 +97,7 @@
     height: 8px;
     margin: 140px;
     border: 1px solid rgb(243, 217, 168);
-    background-color: rgba(253, 255, 158, 0.89);
+    background: linear-gradient(rgba(253, 255, 158, 0.89) 0%, rgb(221, 224, 199) 50%, rgba(253, 255, 158, 0.89) 100%);
     border-radius: 50%;
     box-shadow: 1px 1px 5px 1px black;
 }
@@ -94,6 +107,7 @@
     height: 13px;
     border: 1px solid black;
     border-radius: 50%;
+    box-shadow: inset 0px 0px 5px 3px black;
 }
 
 /* Posición de los altavoces y de los cuadrados*/
@@ -103,13 +117,16 @@
     grid-template-columns: 5px 5px 5px 5px 5px 5px 5px;
     grid-template-rows: 5px 5px 5px 5px 5px 5px 5px;
 }
+
 .altavoz1, .altavoz2, .altavoz3, .altavoz4, .altavoz5, .altavoz6,
 .altavoz7, .altavoz8, .altavoz9{
-    width: 3px;
-    height: 3px; 
+    width: 2px;
+    height: 2px; 
     border: 1px solid black;
     border-radius: 50%;
+    background-color: black;
 }
+
 .altavoz1{
     grid-column: 4 / 8;
 }
@@ -163,6 +180,61 @@
     box-shadow: inset 1px 1px 2px 0px black;
 }
 
+/* Interruptor 3D */
+.tresD{
+    width: 5px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: rgb(228, 228, 228);
+    margin-left: -5px;
+    margin-top: 220px;
+    z-index: 5;
+    box-shadow: inset 1px 0px 2px black;
+}
+
+.tresDext{
+    width: 10px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: rgb(228, 228, 228);
+    margin-left: -15px;
+    margin-top: 220px;
+    z-index: 4;
+    box-shadow: inset 1px 0px 2px black;
+}
+
+.tresDboton{
+    width: 12px;
+    height: 20px;
+    margin-left: -12px;
+    margin-top: 250px;
+    border: 1px solid black;
+    background-color: rgb(187, 187, 187);
+    background: linear-gradient(rgb(168, 168, 168) 50%,rgb(207, 207, 207) 60%, rgb(145, 144, 144) 50%, rgb(168, 168, 168) 100%);
+    z-index: 6;
+}
+
+.trianguloinv{
+    margin-left: 3px;
+    margin-top: 225px;
+    border-top: 50px solid rgb(197, 197, 197);
+    border-left: 15px solid transparent;
+    z-index: 6;
+}
+
+.tresDtextobot, .tresDtextotop{
+    z-index: 7;
+}
+
+.tresDtextotop{
+    margin-left: -50px; 
+    margin-top: 220px;
+}
+
+.tresDtextobot{
+    margin-left: -30px; 
+    margin-top: 265px;
+}
 /* -------------------------------------- */
 /* Parte central de la consola */
 #partecentral{
@@ -171,21 +243,41 @@
     display: flex;
     margin-top: 5px;
     margin-left: -6px;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: -10px -20px 20px 0px black;
 }
 
 .lateralizq, .lateralder{
-    width: 45px;
+    width: 46px;
     height: 25px;
     border: 1px solid black;
     background: linear-gradient(rgb(236, 236, 236) 0%, white 50%, rgb(231, 230, 230) 100%);
 }
+
 .lateralizq{
     border-radius: 5px 0px 0px 5px;
+    box-shadow: -10px 17px 20px 0px black;
 }
 
 .lateralder{
     border-radius: 0px 5px 5px 0px;
 }
+
+.power{
+    width: 5px;
+    height: 15px;
+    margin: 4px;
+    margin-right: 10px;
+    float: right;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 25%;
+}
+
+.power:hover{
+    background-color: rgb(96, 248, 66);
+}
+
 .barracentral{
     width: 492px;
     height: 30px;
@@ -201,12 +293,87 @@
     width: 576px;
     display: grid;
     margin-top: -13px;
-    grid-template-columns: 130px 315px 130px;
+    grid-template-columns: 100px 370px 105px;
     grid-template-rows: 30px 270px 30px ;
     background-color: rgb(236, 236, 236);
+    border: 1px solid black;
     border-radius: 5px 5px 40px 40px;
+    transform-origin: top;
+    transform: skewX(2deg);
+    box-shadow: -10px 10px 20px 0px black;
 }
 
+/* Centro de la parte inferior de la consola */
+.centroinf{
+    grid-row: 1/3;
+    grid-column: 2/3;
+}
+.centro2{
+    width: 350px;
+    height: 285px;
+    border: 10px solid white;
+    border-radius: 5px;
+    box-shadow: 2px 0px 2px 2px black;
+    background: url(../img/inferiornintendo.png) no-repeat ;
+    background-size: 100% 100%;
+}
+
+.ladoinf{
+    width: 341px;
+    grid-row: 3/4;
+    grid-column: 2/3;
+    margin-top: -5px;
+    display: grid;
+    grid-template-columns: 110px 110px 110px 20px;
+    border-top: 10px solid white;
+    border-left: 20px solid white;
+    border-right: 10px solid white;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 2px 2px 2px 2px black;
+    background-color: white;
+}
+
+.botoninf{
+    padding: 5px;
+    text-align: center;
+    font-family: sans-serif;
+    color: grey;
+    font-size: small;
+    border: 1px solid black;
+    border-radius: 5px 5px 2px 2px;
+}
+
+img{
+    width: 12px;
+    margin-right: 10px;
+    margin-left: 4px;
+}
+
+.botonmic{
+    font-family: sans-serif;
+    font-size: 8px;
+    text-align: right;
+}
+
+.luzwifi{
+    width: 5px;
+    height: 3px;
+    border: 1px solid black;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    justify-self: right;
+    margin-top: 10px;
+    margin-right: -4px;
+    background-color: black;
+}
+
+.luzwifi:hover{
+    background-color: yellow;
+}
+
+/* Laterales de la consola (botones y joysticks) */
+
+/* Parte izquierda de controles */
 .ladoinfizq{
     grid-row: 2 / 4;
     grid-column: 1 / 2;
@@ -224,7 +391,7 @@
     width: 70px;
     height: 70px;
     box-shadow: 0px 0px 10px 2px black;
-    background-color: aliceblue;
+    background-color: rgb(247, 249, 252);
 }
 
 .joystickint{
@@ -235,15 +402,12 @@
     box-shadow: inset 0px 0px 30px 1px black;
 }
 
-.cruceta{
+.cruceta, .crucetabotones{
     display: grid;
     grid-template-columns: 20px 20px 20px;
     grid-template-rows: 20px 20px 20px;
-    margin-left: 5px;
+    justify-content: center;
     grid-row: 3 / 4;
-    /* font-family: sans-serif;
-    text-align: center;
-    font-size: small; */
 }
 
 .cruz1, .cruz2, .cruz3, .cruz4, .cruz5{
@@ -286,4 +450,91 @@
 .cruz5{
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+}
+
+/* Parte derecha de controles */
+.ladoinfder{
+    grid-row: 2 / 4;
+    grid-column: 3 / 4;
+    display: grid;
+    grid-template-rows: 70px 180px 30px 20px;
+    grid-template-columns: 50px 50px;
+}
+
+.crucetabotones{
+    gap: 5px;
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+}
+
+.botonX, .botonY, .botonA, .botonB{
+    height: 20px;
+    width: 23px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding-top: 2px;
+    text-align: center;
+    font-size: smaller; 
+    font-family: sans-serif;
+    color: grey;    
+    background: linear-gradient(rgb(212, 212, 212) 0%, white 50%, rgb(204, 204, 204) 100%);
+    box-shadow: 1px 1px 2px 0px black;
+}
+
+.botonX{
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+.botonY{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+.botonA{
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+}
+.botonB{
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.botonpower{
+    width: 20px;
+    height: 20px;
+    grid-row: 3 / 4;
+    border: 1px solid grey;
+    border-radius: 50%;
+    margin-left: 25px;
+    padding-top: 3px;
+    box-shadow: inset 0px 1px 3px 0px black;
+}
+
+p{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    margin-top: 5px;
+    font-size: x-small;
+    font-family: sans-serif;
+    color: grey;
+}
+
+.onoff, .cargador{
+    width: 3px;
+    height: 5px;
+    border: 1px solid black;
+    background-color: black;
+}
+
+.onoff{
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+    justify-self: end;
+    margin: 15px;
+}
+
+.cargador{
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+    margin: 15px;
+    margin-left: 0;
 }

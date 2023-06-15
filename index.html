@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consola</title>
+    <title>Consola Nintendo 3DS</title>
     <link rel="stylesheet" href="./css/consola.css">
-</head>
 <body>
     <div id="carcasa">
+        
+        <!-- Esta parte corresponde a la parte superior de la consola -->
         <div id="partesuperior">
             <div id="partesuperiorizq"></div>
             <div id="partesuperiorcentral">
@@ -50,13 +51,27 @@
                     <div class="cuadrado"></div>
                 </div>
             </div>
+            <!-- Interruptor de 3D -->
+            <div class="tresD"></div>
+            <div class="tresDext"></div>
+            <div class="tresDboton"></div>
+            <p class="tresDtextotop">3D</p>
+            <div class="trianguloinv"></div>
+            <p class="tresDtextobot">OFF</p>
+            <!-- ------------------------------------- -->
             <div id="partesuperiorder"></div>
         </div>
+
+        <!-- Esta parte corresponde a la parte central de la consola -->
         <div id="partecentral">
             <div class="lateralizq"></div>
             <div class="barracentral"></div>
-            <div class="lateralder"></div>
+            <div class="lateralder">
+                <div class="power"></div>
+            </div>
         </div>
+
+        <!-- Esta parte corresponde a la parte inferior de la consola -->
         <div id="parteinferior">
             <div class="ladoinfizq">
                 <div class="joystickext">
@@ -74,8 +89,25 @@
             <div class="centroinf">
                 <div class="centro2"></div>
             </div>
-            <div class="ladoinf"></div>
-            <div class="ladoinfder"></div>
+            <div class="ladoinf">
+                <div class="botoninf"><b>SELECT</b></div>
+                <div class="botoninf"><img src="./img/392500_estate_home_house_real_icon.png" alt=""><b>HOME</b></div>
+                <div class="botoninf"><b>START</b></div>
+                <div class="botonmic">MIC</div>
+            </div>
+            <div class="luzwifi"></div>
+            <div class="ladoinfder">
+                <div class="crucetabotones">
+                    <div class="botonX"><b>X</b></div>
+                    <div class="botonY"><b>Y</b></div>
+                    <div class="botonA"><b>A</b></div>
+                    <div class="botonB"><b>B</b></div>
+                </div>
+                <div class="botonpower"><img src="./img/8666692_power_icon.png" alt=""></div>
+                <p>POWER</p>
+                <div class="onoff"></div>
+                <div class="cargador"></div>
+            </div>
         </div>
     </div>
 </body>
