@@ -12,6 +12,8 @@ body{
     grid-row: 2/3;
 }
 
+/* -------------------------------------- */
+/* Parte superior de la consola */
 #partesuperior{
     height: 329.34px;
     width: 577px;
@@ -28,8 +30,8 @@ body{
     margin-left: -42px;
     grid-template-columns: 50px 450px 50px;
     grid-template-rows: 30px 300px;
-    box-shadow: -10px -10px 20px 0px black;
-    background: linear-gradient(rgb(179, 178, 178) 0%,rgb(218, 218, 218) 20%, rgb(129, 129, 129) 70%, rgb(177, 177, 177) 80%);
+    box-shadow: -5px -5px 20px 0px black;
+    background: linear-gradient(to bottom, rgb(184, 184, 184), rgb(230, 230, 230));
     border-radius: 40px 40px 5px 5px;
     border: 1px solid black;
     z-index: 2;
@@ -48,6 +50,7 @@ body{
     border-radius: 0px 40px 0px 0px;
 }
 
+/* Centro de la parte superior de la consola */
 .centrosup{
     margin-left: 20px;
     grid-column: 2 / 3;
@@ -55,7 +58,6 @@ body{
     border: 1px solid black;
     border-radius: 15px 15px 5px 5px;
     box-shadow: inset 1px 0px 5px black;
-    
 }
 
 .centro{
@@ -69,6 +71,7 @@ body{
     background-size: 100% 100%;
 }
 
+/* Laterales de la parte superior */
 .ladosupizq{
     margin-left: 20px;
     justify-self: center;
@@ -92,6 +95,7 @@ body{
     display: flex;
 }
 
+/* Posición de los circulos superiores y de la cámara*/
 .circulo{
     width: 8px;
     height: 8px;
@@ -206,7 +210,7 @@ body{
 .tresDboton{
     width: 12px;
     height: 20px;
-    margin-left: -12px;
+    margin-left: -11px;
     margin-top: 250px;
     border: 1px solid black;
     background-color: rgb(187, 187, 187);
@@ -217,7 +221,7 @@ body{
 .trianguloinv{
     margin-left: 3px;
     margin-top: 225px;
-    border-top: 50px solid rgb(197, 197, 197);
+    border-top: 50px solid rgb(141, 141, 141);
     border-left: 15px solid transparent;
     z-index: 6;
 }
@@ -236,6 +240,7 @@ body{
     margin-left: -30px; 
     margin-top: 265px;
 }
+
 /* -------------------------------------- */
 /* Parte central de la consola */
 #partecentral{
@@ -245,6 +250,14 @@ body{
     margin-top: 5px;
     border-radius: 5px 5px 5px 5px;
     box-shadow: -10px -20px 20px 0px black;
+}
+
+.barracentral{
+    width: 492px;
+    height: 30px;
+    margin-top: -5px;
+    border: 1px solid black;
+    background: linear-gradient(rgb(212, 212, 212) 0%, white 50%, rgb(204, 204, 204) 100%);
 }
 
 .lateralizq, .lateralder{
@@ -265,7 +278,7 @@ body{
 }
 
 .power{
-    width: 5px;
+    width: 4px;
     height: 15px;
     margin: 4px;
     margin-right: 10px;
@@ -277,14 +290,6 @@ body{
 
 .power:hover{
     background-color: rgb(96, 248, 66);
-}
-
-.barracentral{
-    width: 492px;
-    height: 30px;
-    margin-top: -5px;
-    border: 1px solid black;
-    background: linear-gradient(rgb(212, 212, 212) 0%, white 50%, rgb(204, 204, 204) 100%);
 }
 
 /* -------------------------------------- */
@@ -302,7 +307,7 @@ body{
     transform-origin: top;
     transform: skewX(2deg);
     box-shadow: -10px 10px 20px 0px black;
-    background: linear-gradient(rgb(223, 223, 223) 0%,rgb(218, 218, 218) 20%, rgb(167, 167, 167) 70%, rgb(180, 180, 180) 80%);
+    background: linear-gradient(to top, rgb(187, 187, 187), rgb(230, 230, 230));
 }
 
 /* Centro de la parte inferior de la consola */
@@ -316,25 +321,26 @@ body{
     height: 285px;
     border: 10px solid rgb(204, 204, 204);
     border-radius: 5px;
-    box-shadow: 2px 0px 2px 2px black;
+    box-shadow: 2px 0px 2px 0px black;
     background: url(../img/inferiornintendo.png) no-repeat ;
     background-size: 100% 100%;
 }
 
+/* Botones inferiores de la consola*/
 .ladoinf{
     width: 341px;
     grid-row: 3/4;
     grid-column: 2/3;
     margin-top: -5px;
+    margin-left: -1px;
     display: grid;
     grid-template-columns: 110px 110px 110px 20px;
     border-top: 10px solid rgb(207, 207, 207);
-    border-left: 20px solid rgb(138, 138, 138);
-    border-right: 10px solid rgb(175, 175, 175);
+    border-left: 20px solid rgb(207, 207, 207); 
+    border-right: 10px solid rgb(207, 207, 207);
     border-radius: 0px 0px 10px 10px;
-    box-shadow: 2px 2px 2px 2px black;    
+    box-shadow: 2px 2px 2px 0px black;    
     background: linear-gradient(rgb(223, 223, 223) 0%,rgb(218, 218, 218) 20%, rgb(167, 167, 167) 70%, rgb(180, 180, 180) 80%);
-
 }
 
 .botoninf{
@@ -355,20 +361,23 @@ img{
 }
 
 .botonmic{
+    height: 25px;
     font-family: sans-serif;
     font-size: 8px;
     text-align: right;
+    border-radius: 0 0 50% 0;
+    background-color: rgb(207, 207, 207);
 }
 
 .luzwifi{
     width: 5px;
     height: 3px;
+    margin-top: 10px;
+    margin-right: -4px;
     border: 1px solid black;
     grid-column: 3 / 4;
     grid-row: 1 / 2;
     justify-self: right;
-    margin-top: 10px;
-    margin-right: -4px;
     background-color: black;
 }
 
@@ -395,8 +404,7 @@ img{
 .joystickext{
     width: 70px;
     height: 70px;
-    box-shadow: 0px 0px 10px 2px black;
-    background-color: rgb(224, 224, 224);
+    box-shadow: inset 0px 0px 4px 1px black;
 }
 
 .joystickint{
@@ -419,7 +427,6 @@ img{
 .cruz1, .cruz2, .cruz3, .cruz4, .cruz5{
     width: 20px;
     height: 20px;
-    background-color:rgb(180, 180, 180);
     font-family: sans-serif;
     text-align: center;
 }
@@ -466,39 +473,13 @@ img{
     grid-column: 2 / 3;
 }
 
-.cruz1-2{
-    grid-row: 1 / 2;
-    grid-column: 1 / 2; 
-    border-right: 1px solid black;
-    border-bottom: 2px solid black;
-}
-
-.cruz1-3{
-    grid-row: 1 / 2;
-    grid-column: 3 / 4;
-    border-left: 2px solid black;
-    border-bottom: 2px solid black;
-}
-
-.cruz3-4{
-    grid-row: 3 / 4;
-    grid-column: 3 / 4;
-    border-left: 4px solid black;
-    border-top: 3px solid black;
-}
-.cruz2-4{
-    grid-row: 3 / 4;
-    grid-column: 1 / 2;
-    border-right: 2px solid black;
-    border-top: 3px solid black;
-}
-
 .bcruz{
     position: relative;
     bottom: -4px;
 }
 
 /* Parte derecha de controles */
+
 .ladoinfder{
     grid-row: 2 / 4;
     grid-column: 3 / 4;
@@ -564,7 +545,7 @@ p{
 }
 
 .onoff, .cargador{
-    width: 3px;
+    width: 2px;
     height: 5px;
     border: 1px solid black;
     background-color: black;
